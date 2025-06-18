@@ -1,0 +1,10 @@
+# Ignore kernel build output
+*.o
+*.ko
+*.mod.c
+*.mod
+*.mod.o
+*.symvers
+*.order
+*.cmd
+.tmp_versions/
