@@ -18,7 +18,7 @@ This project implements a character device driver in the form of a Linux Kernel 
 - Apply sound software engineering practices, including documentation, testing, and version
 control.
 
-# Features: 
+## Features: 
 - Custom character device with open, read, write, and release operations.
 - GPIO pin configuration and handling using gpio_request, gpio_direction_output, and gpio_set_value.
 - Clean module initialization  with proper resource management.
@@ -26,6 +26,5 @@ control.
 
 ## Project Structure: 
 
-![image](https://github.com/user-attachments/assets/c2d0e419-6e05-40c0-9217-0fc80fd1adfd)
-
+![WhatsApp Image 2025-06-18 at 3 16 06 PM](https://github.com/user-attachments/assets/a6d64056-64af-43e0-a0b9-3be81212646b)
 
