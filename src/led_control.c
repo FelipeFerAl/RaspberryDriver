@@ -15,6 +15,10 @@ void print_menu() {
     printf("Select an option: ");
 }
 
+void clear_screen() {
+    printf("\033[2J\033[H"); // ANSI escape codes to clear terminal
+}
+
 int main() {
     int fd;
     char option;
@@ -30,6 +34,9 @@ int main() {
         print_menu();
         option = getchar();
         getchar(); // consume newline
+
+        sleep(0.5);
+        clear_screen();
 
         switch (option) {
             case '1':
