@@ -1,1 +1,0 @@
-cmd_/home/raspizero/Linux/TareaDriver/src/kernel_module.ko := ld -r -EL  -maarch64elf -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T arch/arm64/module.lds -o /home/raspizero/Linux/TareaDriver/src/kernel_module.ko /home/raspizero/Linux/TareaDriver/src/kernel_module.o /home/raspizero/Linux/TareaDriver/src/kernel_module.mod.o;  true
