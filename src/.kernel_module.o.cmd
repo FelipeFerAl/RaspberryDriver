@@ -1065,10 +1065,6 @@ deps_/home/raspizero/Linux/TareaDriver/src/kernel_module.o := \
   /usr/src/linux-headers-6.1.0-rpi7-common-rpi/include/asm-generic/msi.h \
   /usr/src/linux-headers-6.1.0-rpi7-common-rpi/include/linux/gpio/consumer.h \
     $(wildcard include/config/GPIO_SYSFS) \
-  /usr/src/linux-headers-6.1.0-rpi7-common-rpi/include/linux/cdev.h \
-  /usr/src/linux-headers-6.1.0-rpi7-common-rpi/include/linux/delay.h \
-  arch/arm64/include/generated/asm/delay.h \
-  /usr/src/linux-headers-6.1.0-rpi7-common-rpi/include/asm-generic/delay.h \
 
 /home/raspizero/Linux/TareaDriver/src/kernel_module.o: $(deps_/home/raspizero/Linux/TareaDriver/src/kernel_module.o)
 
