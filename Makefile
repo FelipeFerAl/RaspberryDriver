@@ -1,14 +1,18 @@
-obj-m := LED_Driver.o
-LED_Driver-objs := src/LED_Driver_main.o src/kernel_module.o
-
 KDIR := /lib/modules/$(shell uname -r)/build
 PWD := $(shell pwd)
+SRC := $(PWD)/src
 OUT := $(PWD)/temp
+BIN := $(PWD)/bin
+APP := $(BIN)/led_control
 
 all:
 	@mkdir -p $(OUT)
-	$(MAKE) -C $(KDIR) M=$(PWD) O=$(OUT) modules
+	@mkdir -p $(BIN)
+	$(MAKE) -C $(KDIR) M=$(SRC) modules
+	mv $(SRC)/*.o $(SRC)/*.mod.* $(SRC)/*.ko $(OUT) 2>/dev/null || true
+	gcc -o $(APP) $(SRC)/led_control.c
 
 clean:
-	$(MAKE) -C $(KDIR) M=$(PWD) O=$(OUT) clean
-	@rm -rf $(OUT)
+	$(MAKE) -C $(KDIR) M=$(SRC) clean
+	@rm -rf $(OUT)/*
+	@rm -f $(APP)

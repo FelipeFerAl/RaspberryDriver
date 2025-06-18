@@ -1,0 +1,1 @@
+cmd_/home/raspizero/Linux/TareaDriver/src/kernel_module.mod := printf '%s\n'   kernel_module.o | awk '!x[$$0]++ { print("/home/raspizero/Linux/TareaDriver/src/"$$0) }' > /home/raspizero/Linux/TareaDriver/src/kernel_module.mod
