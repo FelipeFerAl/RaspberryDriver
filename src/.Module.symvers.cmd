@@ -1,1 +1,0 @@
-cmd_/home/raspizero/Linux/TareaDriver/src/Module.symvers :=  sed 's/ko$$/o/'  /home/raspizero/Linux/TareaDriver/src/modules.order | scripts/mod/modpost -m -a    -o /home/raspizero/Linux/TareaDriver/src/Module.symvers -e -i Module.symvers -T - 

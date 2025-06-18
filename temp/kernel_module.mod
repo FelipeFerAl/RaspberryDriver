@@ -1,1 +1,0 @@
-/home/raspizero/Linux/TareaDriver/src/kernel_module.o
