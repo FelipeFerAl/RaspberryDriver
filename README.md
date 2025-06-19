@@ -47,7 +47,7 @@ Temp files created by the command `make`.
 
 - `make` = builds the neccesary modules and the "kernel object" to the functioning of all the code.
 - `make clean` = clean all the system, including temporal files, files .o and executables.
-- `sudo insmod led_driver.ko` = inserts the module "Kernel object" to upload it to the raspberry pi.
+- `sudo insmod temp/kernel_module.ko` = inserts the module "Kernel object" to upload it to the raspberry pi.
 - `sudo dmesg -W` = visualize in real time if the module was correctly installed
 
 ![WhatsApp Image 2025-06-18 at 3 17 31 PM](https://github.com/user-attachments/assets/92ef4ef5-9bd4-4199-a5c1-840f2204fed8)
@@ -65,9 +65,9 @@ Temp files created by the command `make`.
 
 ![WhatsApp Image 2025-06-18 at 3 21 19 PM](https://github.com/user-attachments/assets/4dbf3d53-e242-467a-a552-e93e176f4d23)
 
-- `sudo rmmod temp/kernel_module.ko` = removes the module
+- `sudo rmmod kernel_module` = removes the module
   
-- When the process has been complete, the resuls displayed are:
+- When the process has been complete, the displayed results are:
 
   ![WhatsApp Image 2025-06-18 at 3 22 19 PM](https://github.com/user-attachments/assets/cf4b5d6b-d486-4661-b3f8-06ff70ad7bc1)
 
