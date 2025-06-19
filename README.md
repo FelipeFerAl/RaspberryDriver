@@ -37,16 +37,7 @@ File with the excecutable of all the system.
 It contains all the main code for the kernel module and the control of the LED.
 
 - ### makefile:
-Defines how the code is compiled and generates the following auxiliar files: 
-
-| File type       | Meaning                                                  |
-| --------------- | -------------------------------------------------------- |
-| `.o`            | Object file Archivo objeto (compilation for `.c`)        |
-| `.cmd`          | Instructions indicating how that file was compiled       |
-| `.mod.o`        | Intermediate version of the mod                          |
-| `.mod.c`        | Automatically generated code to register the module      |
-| `.ko`           | The final module file loaded with `insmod`               |
-
+Defines how the code is compiled and generates the auxiliar files. 
 
 - ### temp:
 Temp files created by the command `make`.
