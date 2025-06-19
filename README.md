@@ -30,10 +30,10 @@ control.
 
 ## Compilation and results 
 
-- `make` = builds the neccesary modules and the "kernel object" to the correct functioning of each of the functions.
-- `make clean` = clean all the system, including temporal files.
+- `make` = builds the neccesary modules and the "kernel object" to the functioning of all the code.
+- `make clean` = clean all the system, including temporal files, files .o and executables.
 - `sudo insmod led_driver.ko` = inserts the module "Kernel object" to upload it to the raspberry pi.
-- `sudo dmesg -W` = visualize in real time if the module were correctly installed
+- `sudo dmesg -W` = visualize in real time if the module was correctly installed
 
 ![WhatsApp Image 2025-06-18 at 3 17 31 PM](https://github.com/user-attachments/assets/92ef4ef5-9bd4-4199-a5c1-840f2204fed8)
 
