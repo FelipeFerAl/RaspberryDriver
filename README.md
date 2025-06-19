@@ -28,7 +28,7 @@ control.
 
 ![WhatsApp Image 2025-06-18 at 3 16 06 PM](https://github.com/user-attachments/assets/a6d64056-64af-43e0-a0b9-3be81212646b)
 
-##Compilation and results 
+## Compilation and results 
 
 - `make` = builds the neccesary modules and the "kernel object" to the correct functioning of each of the functions.
 - `make clean` = clean all the system, including temporal files.
