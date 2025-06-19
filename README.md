@@ -28,6 +28,29 @@ control.
 
 ![WhatsApp Image 2025-06-18 at 3 16 06 PM](https://github.com/user-attachments/assets/a6d64056-64af-43e0-a0b9-3be81212646b)
 
+## Carpets: 
+
+- ### bin:
+File with the excecutable of all the system. 
+
+- ### src:
+It contains all the main code for the kernel module and the control of the LED.
+
+- ### temp:
+Temp files created by the command `make`.
+
+- ### makefile:
+Defines how the code is compiled and generates the following axuliar files: 
+
+| File type       | Meaning                                                  |
+| --------------- | -------------------------------------------------------- |
+| `.o`            | Object file Archivo objeto (compilation for `.c`)        |
+| `.cmd`          | Instructions indicating how that file was compiled       |
+| `.mod.o`        | Intermediate version of the mod                          |
+| `.mod.c`        | Automatically generated code to register the module      |
+| `.ko`           | The final module file loaded with `insmod`               |
+
+
 ## Compilation and results 
 
 - `make` = builds the neccesary modules and the "kernel object" to the functioning of all the code.
