@@ -36,11 +36,8 @@ File with the excecutable of all the system.
 - ### src:
 It contains all the main code for the kernel module and the control of the LED.
 
-- ### temp:
-Temp files created by the command `make`.
-
 - ### makefile:
-Defines how the code is compiled and generates the following axuliar files: 
+Defines how the code is compiled and generates the following auxiliar files: 
 
 | File type       | Meaning                                                  |
 | --------------- | -------------------------------------------------------- |
@@ -49,6 +46,10 @@ Defines how the code is compiled and generates the following axuliar files:
 | `.mod.o`        | Intermediate version of the mod                          |
 | `.mod.c`        | Automatically generated code to register the module      |
 | `.ko`           | The final module file loaded with `insmod`               |
+
+
+- ### temp:
+Temp files created by the command `make`.
 
 
 ## Compilation and results 
